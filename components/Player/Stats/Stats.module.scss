@@ -1,0 +1,22 @@
+@use "/styles/abstracts" as *;
+
+.stats {
+  background-color: $color-grey;
+  display: grid;
+  gap: 0 1px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section {
+  background-color: $color-white;
+}
+
+.content {
+  padding: $size-3;
+  text-align: center;
+}
+
+.overall {
+  cursor: pointer;
+  font-weight: 700;
+}

@@ -1,0 +1,17 @@
+@use "/styles/abstracts" as *;
+
+.toggler {
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  font-size: $size-8;
+  margin-right: $size-4;
+  padding: 0;
+  
+
+  @include breakpoint(md) {
+    display: none;
+  }
+}

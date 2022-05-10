@@ -1,0 +1,38 @@
+@use "/styles/abstracts" as *;
+
+.pieChart {
+  background-color: $color-white;
+}
+
+.content {
+  border: 1px solid $color-grey;
+  border-top: none;
+  padding: $size-6;
+}
+
+.overall {
+  font-size: $size-4;
+  font-weight: 600;
+  margin-bottom: $size-5;
+  text-align: center;
+}
+
+.legends {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $size-1 $size-2;
+  justify-content: center;
+  padding-bottom: $size-6;
+}
+
+.legend {
+  align-items: center;
+  display: flex;
+  gap: $size-2;
+}
+
+.square {
+  border: 1px solid black;
+  height: $size-3;
+  width: $size-3;
+}

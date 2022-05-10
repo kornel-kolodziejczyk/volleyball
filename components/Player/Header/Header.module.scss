@@ -1,0 +1,29 @@
+@use "/styles/abstracts" as *;
+
+.header {
+  align-content: center;
+  align-items: center;
+  background-color: $color-white;
+  display: flex;
+  grid-template-columns: 1fr 3fr;
+  padding: $size-3;
+}
+
+.info {
+  align-content: center;
+  display: grid;
+  flex: 1;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.name {
+  font-size: $size-4;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.overall {
+  cursor: pointer;
+  font-weight: 900;
+}

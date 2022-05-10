@@ -1,0 +1,8 @@
+@use "/styles/abstracts" as *;
+
+.overlay {
+  background-color: $color-black-transparent;
+  inset: 0;
+  position: fixed;
+  z-index: $z-index-overlay;
+}

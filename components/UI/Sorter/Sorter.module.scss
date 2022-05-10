@@ -1,0 +1,22 @@
+@use "/styles/abstracts" as *;
+
+.sorter {
+  background-color: $color-white;
+  border: 1px solid $color-grey;
+  display: flex;
+  flex-wrap: wrap;
+  gap: $size-3;
+  margin-bottom: $size-2;
+  padding: $size-3;
+  position: relative;
+  
+  @include breakpoint(sm) {
+    padding: $size-5;
+
+  }
+
+  select,
+  button {
+    flex: auto;
+  }
+}

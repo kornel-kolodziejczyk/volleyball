@@ -1,0 +1,23 @@
+@use "/styles/abstracts" as *;
+
+.form {
+  display: grid;
+  gap: $size-4;
+
+  div {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  svg {
+    color: $color-grey;
+    height: 100%;
+    margin-right: $size-4;
+    position: absolute;
+  }
+
+  input {
+    width: 100%;
+  }
+}

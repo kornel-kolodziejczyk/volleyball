@@ -1,0 +1,59 @@
+@use "/styles/abstracts" as *;
+
+.createGame {
+  @include panel;
+}
+
+.header {
+  @include header;
+  text-align: start;
+}
+
+.users {
+  form {
+    display: grid;
+    gap: $size-3;
+    grid-template-columns: 1fr;
+
+    @include breakpoint(sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  ul {
+    margin-bottom: $size-5;
+    padding-left: $size-3;
+
+    li {
+      align-items: center;
+      cursor: pointer;
+      display: flex;
+      gap: $size-3;
+    }
+  }
+}
+
+.actions {
+  form {
+    display: grid;
+    gap: $size-3;
+    grid-template-columns: 1fr;
+
+    @include breakpoint(sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint(md) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    button {
+      @include breakpoint(sm) {
+        grid-column: span 2;
+      }
+      @include breakpoint(md) {
+        grid-column: auto;
+      }
+    }
+  }
+}

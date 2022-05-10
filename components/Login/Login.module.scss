@@ -1,0 +1,10 @@
+@use "/styles/abstracts" as *;
+
+.login {
+  @include panel;
+  max-width: 25rem;
+}
+
+.header {
+  @include header;
+}

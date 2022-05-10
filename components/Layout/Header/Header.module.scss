@@ -1,0 +1,11 @@
+@use "/styles/abstracts" as *;
+
+.header {
+  background-color: $color-white;
+  border-bottom: 1px solid $color-grey;
+}
+
+.subheader {
+  display: flex;
+  align-items: center;
+}

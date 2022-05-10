@@ -1,0 +1,19 @@
+@use "/styles/abstracts" as *;
+
+.container {
+  margin: auto;
+  padding: 0 $size-2;
+  width: 100%;
+
+  @include breakpoint(md) {
+    padding: 0 $size-8;
+  }
+
+  @include breakpoint(lg) {
+    max-width: 960px;
+  }
+
+  @include breakpoint(xl) {
+    max-width: 1140px;
+  }
+}

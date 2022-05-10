@@ -1,0 +1,12 @@
+@use "/styles/abstracts" as *;
+
+.header {
+  background-color: $color-orange-lighter;
+  color: $color-white;
+  font-size: $size-3;
+  font-weight: 900;
+  margin: 0;
+  padding: $size-2 $size-3;
+  text-align: center;
+  text-transform: uppercase;
+}

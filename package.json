@@ -1,0 +1,48 @@
+{
+  "name": "volleyball",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@babel/core": "^7.17.10",
+    "aws-sdk": "^2.1123.0",
+    "axios": "^0.26.1",
+    "bcryptjs": "^2.4.3",
+    "chart.js": "^3.7.1",
+    "chartjs-plugin-datalabels": "^2.0.0",
+    "mongoose": "^6.2.9",
+    "multer": "^1.4.4",
+    "multiparty": "^4.2.3",
+    "next": "12.1.0",
+    "next-auth": "^4.3.1",
+    "next-connect": "^0.12.2",
+    "nprogress": "^0.2.0",
+    "react": "17.0.2",
+    "react-chartjs-2": "^4.0.1",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "react-spinners": "^0.11.0",
+    "react-tooltip": "^4.2.21",
+    "react-transition-group": "^4.4.2",
+    "sum-object-keys": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/multer": "^1.4.7",
+    "@types/multiparty": "^0.0.33",
+    "@types/node": "17.0.21",
+    "@types/nprogress": "^0.2.0",
+    "@types/react": "17.0.41",
+    "@types/react-dom": "^17.0.14",
+    "@types/react-transition-group": "^4.4.4",
+    "eslint": "8.11.0",
+    "eslint-config-next": "12.1.0",
+    "sass": "^1.49.9",
+    "typescript": "4.6.2"
+  }
+}

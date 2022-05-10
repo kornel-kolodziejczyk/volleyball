@@ -1,0 +1,18 @@
+@use "/styles/abstracts" as *;
+
+.statistics {
+  gap: $size-4;
+}
+
+.charts {
+  display: grid;
+  gap: $size-2;
+  grid-template-columns: 1fr;
+
+  @include breakpoint(sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include breakpoint(lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,10 @@
+@use "/styles/abstracts" as *;
+
+.createUser {
+  @include panel;
+  max-width: 40rem;
+}
+
+.header {
+  @include header;
+}

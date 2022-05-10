@@ -1,0 +1,14 @@
+@use "/styles/abstracts" as *;
+
+.tooltip {
+  font-size: $size-3;
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  code {
+    padding-left: $size-2;
+  }
+}

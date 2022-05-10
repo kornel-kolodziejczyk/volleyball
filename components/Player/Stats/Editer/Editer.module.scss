@@ -1,0 +1,25 @@
+@use "/styles/abstracts" as *;
+
+.editer {
+  display: flex;
+  gap: $size-1;
+  justify-content: center;
+  user-select: none;
+
+  svg {
+    cursor: pointer;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.minus {
+  color: $color-red;
+}
+
+.plus {
+  color: $color-green;
+}

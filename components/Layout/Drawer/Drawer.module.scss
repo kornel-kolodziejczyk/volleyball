@@ -1,0 +1,82 @@
+@use "/styles/abstracts" as *;
+
+.drawer {
+  font-family: $font-josefin;
+  background-color: $color-white;
+  border-right: 1px solid $color-grey;
+  bottom: 0;
+  left: 0;
+  max-width: 300px;
+  overflow-y: scroll;
+  padding: 0 $size-5;
+  position: fixed;
+  text-align: right;
+  top: 0;
+  width: 70%;
+  z-index: $z-index-drawer;
+}
+
+.drawer button {
+  background-color: inherit;
+  border: none;
+  color: $color-black;
+  cursor: pointer;
+  font-weight: 900;
+  height: 50px;
+  padding: 0;
+  text-align: end;
+  width: 50px;
+}
+
+.drawer button svg {
+  vertical-align: middle;
+}
+
+.drawer ul {
+  border-top: 1px solid $color-grey;
+  font-size: $size-5;
+  list-style-type: none;
+  margin: 0;
+  padding: $size-3 0;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.drawer a,
+.drawer span {
+  cursor: pointer;
+  display: block;
+  padding: $size-4 $size-2;
+  transition: color 0.2s;
+  word-break: break-word;
+}
+
+.drawer a:hover,
+.drawer span:hover {
+  color: $color-orange;
+}
+
+.slideEnter {
+  transform: translateX(-100%);
+}
+
+.slideEnterActive {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 200ms;
+}
+
+.slideExit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.slideExitActive {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 200ms;
+}
+
+.active {
+  color: $color-orange;
+}

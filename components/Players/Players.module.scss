@@ -1,0 +1,15 @@
+@use "/styles/abstracts" as *;
+
+.players {
+  display: grid;
+  gap: $size-2;
+  grid-template-columns: 1fr;
+
+  @include breakpoint(694px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint(xl) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

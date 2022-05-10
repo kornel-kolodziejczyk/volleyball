@@ -1,0 +1,67 @@
+@use "/styles/abstracts" as *;
+
+.games {
+  display: grid;
+  gap: $size-2;
+  grid-template-columns: 1fr;
+}
+
+.content {
+  display: grid;
+  gap: $size-2;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include breakpoint(sm) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include breakpoint(md) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @include breakpoint(xl) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.game {
+  background-color: $color-white;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.game_content {
+  border: 1px solid $color-orange-lighter;
+  display: grid;
+  gap: $size-3;
+  grid-template-columns: 1fr;
+  padding: $size-3;
+
+  .button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: $size-3;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .button:hover {
+    transform: translateY(-1px);
+  }
+
+  hr {
+    background-color: $color-orange-lighter;
+    border: none;
+    height: 1px;
+    margin: auto;
+    opacity: 0.4;
+    width: 80%;
+  }
+}
+
+.youtube {
+  position: relative;
+  text-align: center;
+}

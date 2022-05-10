@@ -1,0 +1,48 @@
+@use "/styles/abstracts" as *;
+
+.button {
+  align-items: center;
+  background-color: $color-orange-lighter;
+  border: 1px solid transparent;
+  box-shadow: $shadow-button;
+  color: $color-white;
+  cursor: pointer;
+  display: flex;
+  flex: auto;
+  font-size: $size-4;
+  font-size: $size-4;
+  font-weight: 600;
+  height: 35px;
+  justify-content: center;
+  margin: 0;
+  padding-inline: $size-2;
+  touch-action: manipulation;
+  transition: all 250ms;
+  user-select: none;
+  width: auto;
+
+  &:active {
+    &:enabled {
+      background-color: $color-orange-darker;
+      box-shadow: $shadow-button-active;
+      transform: translateY(0);
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &:hover {
+    &:enabled {
+      transform: translateY(-1px);
+      box-shadow: $shadow-button-enabled;
+    }
+  }
+
+  &:focus {
+    &:enabled {
+      box-shadow: $shadow-button-enabled;
+    }
+  }
+}
